@@ -11,12 +11,15 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import org.w3c.dom.Text
+import androidx.compose.material3.Text
+
 
 
 @Composable
@@ -40,7 +43,7 @@ fun FormDataDiri(modifier: Modifier
             singleLine = true,
             shape = MaterialTheme.shapes.large,
             modifier = Modifier.width(250.dp),
-            label = { Text(text = "Nama Lengkap")},
+            label = { Text(text = "Nama Lengkap") },
             onValueChange = {
                 textNama = it
             }
