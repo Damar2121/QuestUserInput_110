@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.material3.Text
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.stringResource
 
 
 @Composable
@@ -105,8 +106,10 @@ fun FormDataDiri(modifier: Modifier
             }
 
         ){
-            Te
+            Text(stringResource(R.string.submit))
+
         }
+
 
 
 
